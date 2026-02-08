@@ -95,33 +95,40 @@ body {
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 1.8rem;
-    color: #ff6b9d;
+    color: #d14d72;
     margin-bottom: 30px;
     line-height: 1.4;
+    text-shadow: 0 2px 4px rgba(255, 105, 180, 0.2);
+    font-weight: 400;
 }
 
 h2 {
     font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
-    color: #ff6b9d;
+    color: #d14d72;
     margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(255, 105, 180, 0.2);
+    font-weight: 400;
 }
 
 /* ===== TYPING ANIMATION ===== */
 .typing-text {
     overflow: hidden;
-    white-space: nowrap;
-    animation: typing 3s steps(40) 0.5s 1 normal both;
-    display: inline-block;
+    white-space: normal;
+    animation: fadeInTyping 2s ease-in-out;
+    display: block;
     max-width: 100%;
+    word-wrap: break-word;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
+@keyframes fadeInTyping {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
     }
-    to {
-        width: 100%;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -269,6 +276,8 @@ h2 {
 .question-text {
     font-size: 2rem;
     margin-bottom: 30px;
+    color: #d14d72;
+    text-shadow: 0 2px 4px rgba(255, 105, 180, 0.2);
 }
 
 .button-group {
@@ -285,8 +294,9 @@ h2 {
 
 .success-text {
     font-size: 3rem;
-    color: #ff6b9d;
+    color: #d14d72;
     animation: celebrate 0.8s ease-out;
+    text-shadow: 0 3px 6px rgba(255, 105, 180, 0.3);
 }
 
 @keyframes celebrate {
@@ -364,7 +374,7 @@ h2 {
     }
     
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     .question-text {
