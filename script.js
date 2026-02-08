@@ -1,7 +1,7 @@
 // ===== CONFIGURATION =====
 const loveMessages = [
     "You make my worst days better 🌸",
-    "You're my favorite notification 📱❤️",
+    "You're the only notification I see 📱❤️",
     "Everything feels warmer with you ✨",
     "You're the best thing that's ever happened to me 🥰",
     "My heart skips a beat every time I see you 💓",
