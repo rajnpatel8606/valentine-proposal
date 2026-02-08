@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special Valentine's message 💖">
+    <title>Will You Be My Valentine? 💖</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Screen 1: Intro -->
+    <div class="screen active" id="screen1">
+        <div class="card">
+            <h1 class="typing-text" id="typingText">Hey ❤️ I made something just for you…</h1>
+            <button class="btn btn-primary" id="startBtn">Tap me 🥺</button>
+        </div>
+    </div>
+    
+    <!-- Screen 2: Love Messages -->
+    <div class="screen" id="screen2">
+        <div class="card">
+            <div class="message-container">
+                <p class="love-message" id="loveMessage"></p>
+            </div>
+            <button class="btn btn-primary" id="nextMessageBtn">Next 💕</button>
+        </div>
+    </div>
+    
+    <!-- Screen 3: Heart Interaction -->
+    <div class="screen" id="screen3">
+        <div class="card">
+            <h2>Tap the heart 5 times 💖</h2>
+            <div class="heart-interaction">
+                <div class="big-heart" id="tapHeart">💖</div>
+                <p class="tap-count">Taps: <span id="tapCounter">0</span>/5</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Screen 4: The Question -->
+    <div class="screen" id="screen4">
+        <div class="card">
+            <div class="question-heart">💘</div>
+            <h1 class="question-text">So… Will you be my Valentine? 💘</h1>
+            <div class="button-group">
+                <button class="btn btn-yes" id="yesBtn1">YES 😍</button>
+                <button class="btn btn-yes" id="yesBtn2">YES OF COURSE ❤️</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Screen 5: Success -->
+    <div class="screen" id="screen5">
+        <div class="confetti" id="confetti"></div>
+        <div class="card success-card">
+            <h1 class="success-text">YAY!! 💕</h1>
+            <p class="success-message">I'm the luckiest person ever 😘</p>
+            <p class="success-message">Happy Valentine's Day 💌</p>
+            <div class="emoji-celebration">✨ 💖 ✨</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
